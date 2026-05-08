@@ -17,6 +17,7 @@ The project is built for the Torque MCP track because it uses Torque's custom-ev
 - GitHub: https://github.com/TateLyman/launchquest-torque
 - Live app: https://tatelyman.github.io/launchquest-torque/
 - Demo video file: https://github.com/TateLyman/launchquest-torque/raw/main/docs/media/launchquest-demo.mp4
+- Demo video on X: https://x.com/tateprograms/status/2052834733160067524
 - Torque MCP docs: https://platform.torque.so/docs/mcp/quickstart
 - Torque event proof: https://github.com/TateLyman/launchquest-torque/blob/main/docs/torque-event-proof.md
 - Active Torque incentive: https://platform.torque.so/project/cmox9sy7301rlk01hsy06e68k/incentives
@@ -57,16 +58,9 @@ secure_launch_builder_referred
 
 ## X Post Draft
 
-Built LaunchQuest for the Torque MCP track.
+Posted from `@tateprograms`:
 
-It turns secure-launch work for MCP servers and AI-built apps into Torque custom events: scan completed, fix verified, report shared, builder referred.
-
-Repo: https://github.com/TateLyman/launchquest-torque
-Demo: https://tatelyman.github.io/launchquest-torque/
-
-@torqueprotocol
-
-Post from: https://x.com/tateprograms
+https://x.com/tateprograms/status/2052834733160067524
 
 ## Superteam Form Answers
 
@@ -89,7 +83,7 @@ Link to your project's Colosseum profile:
 https://github.com/TateLyman/launchquest-torque/blob/main/docs/colosseum-status.md
 
 Link to your Demo Video on X:
-Pending. Video file is ready at https://github.com/TateLyman/launchquest-torque/raw/main/docs/media/launchquest-demo.mp4
+https://x.com/tateprograms/status/2052834733160067524
 
 Presentation Link:
 https://github.com/TateLyman/launchquest-torque/blob/main/docs/submission-pack.md
