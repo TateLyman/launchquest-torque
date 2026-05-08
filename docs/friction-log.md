@@ -16,6 +16,7 @@ The browser never stores the Torque event-ingestion API key. Production deployme
 
 ## Submission blockers
 
+- Listing checked May 8, 2026: open, human-only, 7 submissions, 3,000 USDC total prizes, winner announcement May 26, 2026.
 - Needs a Torque account and auth token.
 - Needs a Torque event-ingestion API key.
 - Needs a Superteam Earn submission.

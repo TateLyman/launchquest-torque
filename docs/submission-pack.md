@@ -19,6 +19,7 @@ The project is built for the Torque MCP track because it uses Torque's custom-ev
 - Demo video file: https://github.com/TateLyman/launchquest-torque/raw/main/docs/media/launchquest-demo.mp4
 - Torque MCP docs: https://platform.torque.so/docs/mcp/quickstart
 - Superteam listing: https://superteam.fun/earn/listing/build-with-torque-mcp-1/
+- Listing status checked May 8, 2026: open, human-only, 7 submissions, 3,000 USDC total prizes, winner announcement May 26, 2026.
 
 ## Torque Events
 
@@ -78,3 +79,10 @@ https://github.com/TateLyman/launchquest-torque/blob/main/docs/submission-pack.m
 
 Project Twitter Profile Link:
 Pending
+
+## Manual Submission Blockers
+
+- Parent/legal guardian consent for Superteam Earn terms if the operator is under 18.
+- Colosseum Frontier project profile URL.
+- Public X demo post tagging `@torqueprotocol`; use the MP4 linked above.
+- Torque platform credentials if we want to configure live custom-event ingestion rather than the static GitHub Pages demo.
