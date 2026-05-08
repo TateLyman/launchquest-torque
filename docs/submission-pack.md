@@ -51,6 +51,8 @@ Demo: https://tatelyman.github.io/launchquest-torque/
 
 @torqueprotocol
 
+Post from: https://x.com/tateprograms
+
 ## Superteam Form Answers
 
 Project Title:
@@ -78,7 +80,7 @@ Presentation Link:
 https://github.com/TateLyman/launchquest-torque/blob/main/docs/submission-pack.md
 
 Project Twitter Profile Link:
-Pending
+https://x.com/tateprograms
 
 ## Manual Submission Blockers
 

@@ -20,5 +20,6 @@ The browser never stores the Torque event-ingestion API key. Production deployme
 - Needs a Torque account and auth token.
 - Needs a Torque event-ingestion API key.
 - Needs a Superteam Earn submission.
-- Needs a public X demo video tagging `@torqueprotocol`.
+- X account ready: `@tateprograms`.
+- Needs a public X demo video post from `@tateprograms` tagging `@torqueprotocol`.
 - Needs a Colosseum project profile URL if submitting to the Frontier hackathon.
