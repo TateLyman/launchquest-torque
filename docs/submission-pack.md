@@ -68,10 +68,10 @@ Project Website:
 https://tatelyman.github.io/launchquest-torque/
 
 Did you submit this project to the official Frontier Hackathon on Colosseum?:
-Pending
+No. Frontier registration had already passed, so this is being submitted for the Torque MCP track on Superteam Earn.
 
 Link to your project's Colosseum profile:
-Pending
+https://github.com/TateLyman/launchquest-torque/blob/main/docs/colosseum-status.md
 
 Link to your Demo Video on X:
 Pending. Video file is ready at https://github.com/TateLyman/launchquest-torque/raw/main/docs/media/launchquest-demo.mp4
