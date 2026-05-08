@@ -18,6 +18,7 @@ The project is built for the Torque MCP track because it uses Torque's custom-ev
 - Live app: https://tatelyman.github.io/launchquest-torque/
 - Demo video file: https://github.com/TateLyman/launchquest-torque/raw/main/docs/media/launchquest-demo.mp4
 - Torque MCP docs: https://platform.torque.so/docs/mcp/quickstart
+- Torque event proof: https://github.com/TateLyman/launchquest-torque/blob/main/docs/torque-event-proof.md
 - Superteam listing: https://superteam.fun/earn/listing/build-with-torque-mcp-1/
 - Listing status checked May 8, 2026: open, human-only, 7 submissions, 3,000 USDC total prizes, winner announcement May 26, 2026.
 
@@ -59,7 +60,7 @@ Project Title:
 LaunchQuest
 
 Project Description:
-LaunchQuest turns secure-launch work for MCP servers and AI-built apps into a measurable Torque growth loop. Builders earn points for scanning a repo, fixing launch blockers, sharing a report, and referring another builder. The app generates Torque custom-event payloads, displays a leaderboard, and ships a server-side ingestion proxy that forwards allowed events to Torque without exposing the event API key in the browser.
+LaunchQuest turns secure-launch work for MCP servers and AI-built apps into a measurable Torque growth loop. Builders earn points for scanning a repo, fixing launch blockers, sharing a report, and referring another builder. The app generates Torque custom-event payloads, displays a leaderboard, and ships a server-side ingestion proxy that forwards allowed events to Torque without exposing the event API key in the browser. All four custom events were created in Torque and accepted by the Torque event API.
 
 Project GitHub Link:
 https://github.com/TateLyman/launchquest-torque

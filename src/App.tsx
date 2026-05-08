@@ -30,7 +30,7 @@ type Quest = {
 
 type ActivityEvent = {
   userPubkey: string
-  timestamp: number
+  timestamp: string
   eventName: string
   data: {
     repoUrl: string
@@ -120,7 +120,7 @@ function App() {
       }
       current.events += 1
       current.points += event.data.points
-      current.lastSeen = Math.max(current.lastSeen, event.timestamp)
+      current.lastSeen = Math.max(current.lastSeen, new Date(event.timestamp).getTime())
       rows.set(event.userPubkey, current)
     }
     return [...rows.values()].sort((a, b) => b.points - a.points || b.lastSeen - a.lastSeen)
@@ -387,7 +387,7 @@ function buildEvent(
 ): ActivityEvent {
   return {
     userPubkey,
-    timestamp: Date.now(),
+    timestamp: new Date().toISOString(),
     eventName: quest.eventName,
     data: {
       repoUrl,

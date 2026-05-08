@@ -29,13 +29,21 @@ export default async function handler(request, response) {
     return response.status(400).json({ error: 'missing_user_pubkey' })
   }
 
+  const normalizedEvent = {
+    ...event,
+    timestamp:
+      typeof event.timestamp === 'number'
+        ? new Date(event.timestamp).toISOString()
+        : event.timestamp || new Date().toISOString(),
+  }
+
   const torqueResponse = await fetch('https://ingest.torque.so/events', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'x-api-key': apiKey,
     },
-    body: JSON.stringify(event),
+    body: JSON.stringify(normalizedEvent),
   })
 
   const text = await torqueResponse.text()

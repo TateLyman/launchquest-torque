@@ -14,6 +14,10 @@ LaunchQuest uses custom events instead of on-chain instructions first because th
 
 The browser never stores the Torque event-ingestion API key. Production deployment should route events through `api/ingest.js` with `TORQUE_EVENT_API_KEY` configured server-side.
 
+## Live event test
+
+All four LaunchQuest custom events returned `202 ACCEPTED` from Torque on May 8, 2026. See `docs/torque-event-proof.md`.
+
 ## Submission blockers
 
 - Listing checked May 8, 2026: open, human-only, 7 submissions, 3,000 USDC total prizes, winner announcement May 26, 2026.
