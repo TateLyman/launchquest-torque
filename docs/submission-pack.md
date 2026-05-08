@@ -19,8 +19,22 @@ The project is built for the Torque MCP track because it uses Torque's custom-ev
 - Demo video file: https://github.com/TateLyman/launchquest-torque/raw/main/docs/media/launchquest-demo.mp4
 - Torque MCP docs: https://platform.torque.so/docs/mcp/quickstart
 - Torque event proof: https://github.com/TateLyman/launchquest-torque/blob/main/docs/torque-event-proof.md
+- Active Torque incentive: https://platform.torque.so/project/cmox9sy7301rlk01hsy06e68k/incentives
 - Superteam listing: https://superteam.fun/earn/listing/build-with-torque-mcp-1/
 - Listing status checked May 8, 2026: open, human-only, 7 submissions, 3,000 USDC total prizes, winner announcement May 26, 2026.
+
+## Active Torque Incentive
+
+LaunchQuest has an active Torque incentive configured in the LaunchQuest project:
+
+- Name: `Secure-Launch Builder Leaderboard`
+- Status: `Active`
+- Start date: May 9, 2026
+- End date: May 23, 2026
+- Rewarded so far: `0`
+- Incentive page: https://platform.torque.so/project/cmox9sy7301rlk01hsy06e68k/incentives
+
+The incentive ranks wallets by total points across the four secure-launch custom events and rewards the top builders through a leaderboard structure.
 
 ## Torque Events
 
@@ -60,7 +74,7 @@ Project Title:
 LaunchQuest
 
 Project Description:
-LaunchQuest turns secure-launch work for MCP servers and AI-built apps into a measurable Torque growth loop. Builders earn points for scanning a repo, fixing launch blockers, sharing a report, and referring another builder. The app generates Torque custom-event payloads, displays a leaderboard, and ships a server-side ingestion proxy that forwards allowed events to Torque without exposing the event API key in the browser. All four custom events were created in Torque and accepted by the Torque event API.
+LaunchQuest turns secure-launch work for MCP servers and AI-built apps into a measurable Torque growth loop. Builders earn points for scanning a repo, fixing launch blockers, sharing a report, and referring another builder. The app generates Torque custom-event payloads, displays a leaderboard, and ships a server-side ingestion proxy that forwards allowed events to Torque without exposing the event API key in the browser. All four custom events were created in Torque, accepted by the Torque event API, and connected to an active Torque incentive called Secure-Launch Builder Leaderboard.
 
 Project GitHub Link:
 https://github.com/TateLyman/launchquest-torque
@@ -85,7 +99,5 @@ https://x.com/tateprograms
 
 ## Manual Submission Blockers
 
-- Parent/legal guardian consent for Superteam Earn terms if the operator is under 18.
-- Colosseum Frontier project profile URL.
 - Public X demo post tagging `@torqueprotocol`; use the MP4 linked above.
-- Torque platform credentials if we want to configure live custom-event ingestion rather than the static GitHub Pages demo.
+- Superteam submission after the X demo URL exists.

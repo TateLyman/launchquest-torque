@@ -2,6 +2,14 @@
 
 The LaunchQuest custom events were created in Torque and tested with the project event API key on May 8, 2026.
 
+The project also has an active Torque incentive:
+
+- Name: `Secure-Launch Builder Leaderboard`
+- Status: `Active`
+- Start date: May 9, 2026
+- End date: May 23, 2026
+- Incentive page: https://platform.torque.so/project/cmox9sy7301rlk01hsy06e68k/incentives
+
 Accepted event ingestion IDs:
 
 - `secure_launch_scan_completed`: `280099f7-9233-4ec5-8531-6fad69ec7b81`
