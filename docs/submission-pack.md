@@ -16,6 +16,7 @@ The project is built for the Torque MCP track because it uses Torque's custom-ev
 
 - GitHub: https://github.com/TateLyman/launchquest-torque
 - Live app: https://tatelyman.github.io/launchquest-torque/
+- Demo video file: https://github.com/TateLyman/launchquest-torque/raw/main/docs/media/launchquest-demo.mp4
 - Torque MCP docs: https://platform.torque.so/docs/mcp/quickstart
 - Superteam listing: https://superteam.fun/earn/listing/build-with-torque-mcp-1/
 
@@ -70,7 +71,7 @@ Link to your project's Colosseum profile:
 Pending
 
 Link to your Demo Video on X:
-Pending
+Pending. Video file is ready at https://github.com/TateLyman/launchquest-torque/raw/main/docs/media/launchquest-demo.mp4
 
 Presentation Link:
 https://github.com/TateLyman/launchquest-torque/blob/main/docs/submission-pack.md

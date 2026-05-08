@@ -11,6 +11,8 @@ It turns defensive launch-readiness work into measurable Torque custom events:
 
 The app includes a local quest console, event payload generator, leaderboard, friction log, and a server-side event-ingestion proxy for Torque.
 
+Demo video: [docs/media/launchquest-demo.mp4](docs/media/launchquest-demo.mp4)
+
 ## Why Torque
 
 The Superteam Earn Torque MCP track rewards projects that use Torque MCP to create a growth loop with measurable live activity. LaunchQuest uses custom events so builders can earn leaderboard points for scanning, fixing, sharing, and referring other secure-launch participants.
@@ -64,6 +66,7 @@ The browser should not contain a Torque event-ingestion API key. Deploy with a s
 
 ```bash
 TORQUE_EVENT_API_KEY=...
+VITE_EVENT_PROXY_URL=/api/ingest
 ```
 
 The included `api/ingest.js` endpoint forwards allowed LaunchQuest events to:
@@ -72,10 +75,13 @@ The included `api/ingest.js` endpoint forwards allowed LaunchQuest events to:
 https://ingest.torque.so/events
 ```
 
+The GitHub Pages build is a static demo. For live ingestion, deploy the same repo on a serverless host such as Vercel and configure `TORQUE_EVENT_API_KEY` there.
+
 ## Submission Checklist
 
 - Public GitHub repo
 - Deployed project URL
+- Short demo video file: [docs/media/launchquest-demo.mp4](docs/media/launchquest-demo.mp4)
 - Short demo video on X tagging `@torqueprotocol`
 - Superteam Earn submission for `Build with Torque MCP`
 - Colosseum project profile if submitting to the Frontier hackathon

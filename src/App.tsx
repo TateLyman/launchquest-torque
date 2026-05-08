@@ -3,12 +3,15 @@ import {
   BadgeCheck,
   ClipboardCheck,
   Copy,
+  CircleCheck,
   ExternalLink,
   Flame,
   GitBranch,
   RadioTower,
+  Send,
   ShieldCheck,
   Sparkles,
+  TriangleAlert,
   Trophy,
   Wallet,
 } from 'lucide-react'
@@ -37,6 +40,11 @@ type ActivityEvent = {
     points: number
     source: string
   }
+}
+
+type IngestState = {
+  status: 'idle' | 'sending' | 'sent' | 'error'
+  message: string
 }
 
 const demoWallets = [
@@ -86,6 +94,7 @@ const frictionLog = [
 function App() {
   const [repoUrl, setRepoUrl] = useState('https://github.com/TateLyman/shipcheck-demo-ai-app')
   const [wallet, setWallet] = useState(demoWallets[0])
+  const [proxyUrl, setProxyUrl] = useState(import.meta.env.VITE_EVENT_PROXY_URL ?? '/api/ingest')
   const [score, setScore] = useState(72)
   const [highFindings, setHighFindings] = useState(1)
   const [mediumFindings, setMediumFindings] = useState(2)
@@ -95,6 +104,10 @@ function App() {
     ),
   )
   const [copied, setCopied] = useState('')
+  const [ingestState, setIngestState] = useState<IngestState>({
+    status: 'idle',
+    message: 'Ready to send through the server-side Torque proxy.',
+  })
 
   const leaderboard = useMemo(() => {
     const rows = new Map<string, { wallet: string; events: number; points: number; lastSeen: number }>()
@@ -130,6 +143,39 @@ function App() {
     await navigator.clipboard.writeText(value)
     setCopied(label)
     window.setTimeout(() => setCopied(''), 1600)
+  }
+
+  async function sendSelectedEvent() {
+    setIngestState({ status: 'sending', message: 'Sending selected event through the proxy.' })
+
+    try {
+      const response = await fetch(proxyUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(selectedPayload),
+      })
+      const text = await response.text()
+      let parsed: unknown
+
+      try {
+        parsed = text ? JSON.parse(text) : {}
+      } catch {
+        parsed = text
+      }
+
+      if (!response.ok) {
+        const detail =
+          parsed && typeof parsed === 'object' && 'error' in parsed
+            ? String(parsed.error)
+            : `HTTP ${response.status}`
+        throw new Error(detail)
+      }
+
+      setIngestState({ status: 'sent', message: 'Proxy accepted the Torque event.' })
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Unknown proxy error'
+      setIngestState({ status: 'error', message })
+    }
   }
 
   return (
@@ -226,10 +272,27 @@ function App() {
               <Copy size={16} />
             </button>
           </div>
+          <label className="field-label" htmlFor="proxy">
+            Proxy
+            <input id="proxy" value={proxyUrl} onChange={(event) => setProxyUrl(event.target.value)} />
+          </label>
           <pre className="payload"><code>{JSON.stringify(selectedPayload, null, 2)}</code></pre>
           <div className="ingest-row">
-            <span>POST https://ingest.torque.so/events</span>
-            <span>x-api-key server-side</span>
+            <button
+              className="send-button"
+              type="button"
+              disabled={ingestState.status === 'sending'}
+              onClick={sendSelectedEvent}
+            >
+              <Send size={16} />
+              {ingestState.status === 'sending' ? 'Sending' : 'Send event'}
+            </button>
+            <span className={`ingest-state ${ingestState.status}`}>
+              {ingestState.status === 'sent' ? <CircleCheck size={15} /> : null}
+              {ingestState.status === 'error' ? <TriangleAlert size={15} /> : null}
+              {ingestState.status === 'idle' || ingestState.status === 'sending' ? <RadioTower size={15} /> : null}
+              {ingestState.message}
+            </span>
           </div>
         </div>
       </section>

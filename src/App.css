@@ -164,6 +164,7 @@ input:focus {
 .quest-button,
 .submission-actions a,
 .submission-actions button,
+.send-button,
 .icon-button {
   align-items: center;
   border: 1px solid var(--line-strong);
@@ -206,9 +207,15 @@ input:focus {
 .quest-button:hover,
 .submission-actions a:hover,
 .submission-actions button:hover,
+.send-button:hover,
 .icon-button:hover {
   border-color: rgba(217, 79, 48, 0.55);
   box-shadow: 0 12px 28px rgba(217, 79, 48, 0.12);
+}
+
+.send-button:disabled {
+  cursor: wait;
+  opacity: 0.72;
 }
 
 .icon-button {
@@ -237,21 +244,40 @@ input:focus {
 .ingest-row {
   display: grid;
   gap: 8px;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(150px, auto) minmax(0, 1fr);
   margin-top: 12px;
 }
 
-.ingest-row span {
+.send-button {
+  background: #1b7d5d;
+  color: #fffdf8;
+  padding: 8px 12px;
+}
+
+.ingest-state {
+  align-items: center;
   background: #f6efe2;
   border-radius: 8px;
   color: var(--muted);
+  display: inline-flex;
   font-size: 0.78rem;
   font-weight: 850;
+  gap: 7px;
   min-width: 0;
   overflow: hidden;
   padding: 8px 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.ingest-state.sent {
+  background: rgba(27, 125, 93, 0.12);
+  color: #176649;
+}
+
+.ingest-state.error {
+  background: rgba(217, 79, 48, 0.11);
+  color: #9d351e;
 }
 
 .dashboard-grid {
