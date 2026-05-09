@@ -6,7 +6,7 @@ LaunchQuest
 
 ## Project Description
 
-LaunchQuest turns secure-launch work for MCP servers and AI-built apps into a measurable Torque growth loop.
+LaunchQuest turns secure-launch work for MCP servers and modern full-stack apps into a measurable Torque growth loop.
 
 Builders earn points when they run a Shipcheck-style launch scan, fix launch blockers, share a report, and refer another builder into the secure-launch loop. The app generates Torque custom-event payloads, shows a leaderboard, and includes a server-side ingestion proxy so the Torque API key stays out of the browser.
 
@@ -68,7 +68,7 @@ Project Title:
 LaunchQuest
 
 Project Description:
-LaunchQuest turns secure-launch work for MCP servers and AI-built apps into a measurable Torque growth loop. Builders earn points for scanning a repo, fixing launch blockers, sharing a report, and referring another builder. The app generates Torque custom-event payloads, displays a leaderboard, and ships a server-side ingestion proxy that forwards allowed events to Torque without exposing the event API key in the browser. All four custom events were created in Torque, accepted by the Torque event API, and connected to an active Torque incentive called Secure-Launch Builder Leaderboard.
+LaunchQuest turns secure-launch work for MCP servers and modern full-stack apps into a measurable Torque growth loop. Builders earn points for scanning a repo, fixing launch blockers, sharing a report, and referring another builder. The app generates Torque custom-event payloads, displays a leaderboard, and ships a server-side ingestion proxy that forwards allowed events to Torque without exposing the event API key in the browser. All four custom events were created in Torque, accepted by the Torque event API, and connected to an active Torque incentive called Secure-Launch Builder Leaderboard.
 
 Project GitHub Link:
 https://github.com/TateLyman/launchquest-torque

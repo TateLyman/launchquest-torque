@@ -92,7 +92,7 @@ const frictionLog = [
 ]
 
 function App() {
-  const [repoUrl, setRepoUrl] = useState('https://github.com/TateLyman/shipcheck-demo-ai-app')
+  const [repoUrl, setRepoUrl] = useState('https://github.com/TateLyman/shipcheck-demo-app')
   const [wallet, setWallet] = useState(demoWallets[0])
   const [proxyUrl, setProxyUrl] = useState(import.meta.env.VITE_EVENT_PROXY_URL ?? '/api/ingest')
   const [score, setScore] = useState(72)
@@ -425,7 +425,7 @@ const eventSchema = {
 const torqueSetup = `claude mcp add torque -e TORQUE_API_TOKEN=your-token -- npx @torque-labs/mcp@latest
 
 Create project:
-LaunchQuest - secure-launch growth loops for MCP and AI-app builders.
+LaunchQuest - secure-launch growth loops for MCP and app builders.
 
 Create custom events:
 secure_launch_scan_completed

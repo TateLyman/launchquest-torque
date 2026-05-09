@@ -1,6 +1,6 @@
 # LaunchQuest
 
-LaunchQuest is a Torque MCP hackathon project for secure launch loops around MCP servers and AI-built apps.
+LaunchQuest is a Torque MCP hackathon project for secure launch loops around MCP servers and modern full-stack apps.
 
 It turns defensive launch-readiness work into measurable Torque custom events:
 
